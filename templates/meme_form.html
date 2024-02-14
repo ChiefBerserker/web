@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br></br>
+<div id="memer" style="text-align: center; border: black 2px solid; background-color: rgb(255, 255, 255); width: 75%; height: 92%; margin-left: auto; max-height: 1200px; max-width: 900px; margin-right: auto;">
+  <h1 style="padding: 20px;">Meme Generator</h1> 
+  <form name="myForm" onsubmit="return validateForm()" method="post"  class="form" required> 
+    <label for="template"style="padding-bottom: 10px; pading-top:3px">Select Template:</label> <br/>
+    <select name="template" id="template" style="text-align: center; font-weight: 90;"> {% for template in templates %} 
+      <option value="{{ template.id }}">{{ template.name }}</option> 
+      {% endfor %} </select> <br> 
+      <label for="text0" style="padding: 10px;">Top Text:</label><br/>
+       <input type="text" name="text0" id="text0" style="width: 90%; text-align: center; font-weight: 90;"> <br> 
+       <label for="text1" style="padding: 10px;">Bottom Text:</label> <br/>
+       <input type="text" name="text1" id="text1" style="width: 90%; text-align: center; font-weight: 90;" > <br> 
+       <input type="submit" value="Generate Meme" style="width: 90%; margin-top: 10px; margin-bottom: 10px; background-color: black; color: white;"> 
+       <br/>
+      <div>
+      {% if meme_url %}
+      <div id="meme_made">
+        <img src="{{ meme_url }}" alt="Generated Meme">
+      </div>
+    {% endif %}
+    </div>
+  </div>
+  <br></br>
+  <div>
+    <p>This Meme Generator was made with imgflips API</p>
+  </div>
+
+{% endblock %}

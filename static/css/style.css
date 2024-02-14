@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/modern-typewriter');
+
+*{
+    font-family: 'MODERN TYPEWRITER',sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    background: #d5d4d4;
+}
+
+
+
+#main_content{
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    box-shadow: -10px 10px grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar{
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+
+}
+
+#navbar_main{
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(83, 83, 83);
+    padding: 5px;  
+    background:#d5d4d4 ;
+}
+
+#about_me_content{
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    box-shadow: -10px 10px rgb(173, 173, 173);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio_content{
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    box-shadow: -10px 10px grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#memer img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+#contact_content{
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    box-shadow: -10px 10px rgb(173, 173, 173);
+    margin-left: auto;
+    margin-right: auto;
+}
